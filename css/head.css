@@ -1,0 +1,42 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding: 1rem 0.7rem 1rem 0.7rem;
+}
+
+
+.menu__header{
+   display: flex;
+}
+
+.menu__list{
+    display:none;
+    
+}
+.menu__title{
+    display: flex;
+    align-items: center;
+    font-family: var(--raleway);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+    text-align: justify;
+    color: var(--color-titulo);
+  
+    
+}
+.menu__list__item__contato{
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: var(--color-titulo);
+
+}
+

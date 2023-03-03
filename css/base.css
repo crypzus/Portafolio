@@ -1,0 +1,33 @@
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo:   #f4f8f4 ;  /*#f4f8f4*/
+   --cor-de-link: #000;
+   /* color de titulo y subtitulo */
+   --color-titulo: #464646;
+   
+
+
+   /* estilo de letra  */
+   --raleway:'Raleway', sans-serif; 
+
+
+}
+
+body {
+    font-family: ;
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: var(--raleway);
+    margin: 0;
+    padding: 1rem;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-titulo);
+}

@@ -1,0 +1,24 @@
+.about__container{
+
+}
+
+.about__title{
+    padding: 1rem 0 1rem 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: var(--color-titulo);
+}
+
+.about__paragraph{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: var(--color-titulo);
+}
+
+.about__firma{
+    width: 9rem;
+    
+}
