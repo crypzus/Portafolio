@@ -1,42 +1,86 @@
-.menu{
+.contenedor-header{
+    background:var(--color-fondo);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-   
-    padding: 1rem 0.7rem 1rem 0.7rem;
-}
-
-
-.menu__header{
-   display: flex;
-}
-
-.menu__list{
-    display:none;
-    
-}
-.menu__title{
-    display: flex;
     align-items: center;
-    font-family: var(--raleway);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
-    padding-left: 0.2rem;
-    text-align: justify;
-    color: var(--color-titulo);
-  
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+   font-family: var(--nombre);
+   font-size: 32px;
+   color: var(--color-elementos);
+   text-decoration: none;  
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: var(--color-lista);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: var(--color-elementos);
+}
+
+.nav-responsive{
+    background-color: var(--color-elementos);
+    color:var(--color-lista) ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
     
 }
-.menu__list__item__contato{
-    display: flex;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
-    color: var(--color-titulo);
 
+/* media qerry */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: var(--color-box);
+        width: 180px;
+        border-radius: 5px;
+    }
+
+    nav.responsive ul{
+        display: block !important; 
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid var(--color-lista);
+        padding: 10px 0;
+
+    }
+
+    nav.responsive .finList{
+        border-bottom:none;
+    }
 }
-

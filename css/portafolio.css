@@ -1,0 +1,96 @@
+
+
+.portafolio {
+    background-color: var(--color-box);
+    color: var(--color-lista);
+    padding: 50px 20px;
+}
+.portafolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.portafolio h2 {
+    font-size: 42px;
+    font-family: var(--nombre);
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width:340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display:block;
+    border-radius: 15px;
+    height: 100%;
+    
+    
+}
+
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(27, 179, 58, 0.7), rgba(28,182,152,.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    border-radius: 15px;
+    letter-spacing: 3px;
+    opacity: 0;
+    
+}
+
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+
+}
+
+.portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0;
+
+}
+
+/* media qerry */
+@media screen and (max-width:700px){
+    
+    .portafolio  .galeria{
+        display: block;
+        width: 100;
+    }
+    .portafolio  .galeria .proyecto{
+        max-width: 100%;
+    }
+
+    .portafolio  .galeria .proyecto img{
+        width: 100%;
+    }
+
+
+}

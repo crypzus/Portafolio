@@ -1,0 +1,217 @@
+.skills{
+    background: var(--color-box);
+    color: var(--color-lista);
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills  h2{
+    font-size: 42px;
+    font-family: var(--nombre);
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.skills .fila{
+ display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding:  0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 26px;
+    font-family: var(--nombre);
+    margin-bottom: 25px;
+} 
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+} 
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: var(--color-barra);
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}  
+
+.skills .skill .progreso{
+    background-color: var(--color-elementos);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-elementos);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+    
+}
+ /* tecnical skills */
+/* clases dinamicas se agregaran mediante javasript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width:0%;}
+    100%{width:50%;}
+    
+    
+}
+
+.skills .skill .htmlCss{
+    width: 0%;
+    animation: 2s htmlCss forwards;
+}
+@keyframes htmlCss {
+    0%{width:0%;}
+    100%{width:60%;}
+    
+    
+}
+.skills .skill .microsoftOffice{
+    width: 0%;
+    animation: 2s microsoftOffice forwards;
+}
+@keyframes microsoftOffice {
+    0%{width:0%;}
+    100%{width:75%;}
+    
+    
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width:0%;}
+    100%{width:50%;}
+    
+    
+}
+
+.skills .skill .gitHub{
+    width: 0%;
+    animation: 2s gitHub forwards;
+}
+@keyframes gitHub {
+    0%{width:0%;}
+    100%{width:75%;}
+    
+    
+}
+
+.skills .skill .nodeJs{
+    width: 0%;
+    animation: 2s nodeJs forwards;
+}
+@keyframes nodeJs {
+    0%{width:0%;}
+    100%{width:75%;}
+    
+    
+}
+
+/* professional skills */
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width:0%;}
+    100%{width:95%;}
+    
+    
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width:0%;}
+    100%{width:80%;}
+    
+    
+}
+
+.skills .skill .Pensamiento{
+    width: 0%;
+    animation: 2s Pensamiento forwards;
+}
+@keyframes Pensamiento {
+    0%{width:0%;}
+    100%{width:80%;}
+    
+    
+}
+.skills .skill .adaptabilidad{
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad{
+    0%{width:0%;}
+    100%{width:75%;}
+    
+    
+}
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion{
+    0%{width:0%;}
+    100%{width:90%;}
+    
+    
+}
+
+.skills .skill .problema{
+    width: 0%;
+    animation: 2s problema forwards;
+}
+@keyframes problema{
+    0%{width:0%;}
+    100%{width:98%;}
+    
+    
+}
+/* media qerry */
+@media screen and (max-width:700px){
+    
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+
+}
+

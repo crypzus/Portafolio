@@ -1,24 +1,130 @@
-.about__container{
-
+.sobremi {
+    background: var(--color-fondo);
+    color: var(--color-lista);
+    padding: 50px 20px;
 }
 
-.about__title{
-    padding: 1rem 0 1rem 0;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.7rem;
-    color: var(--color-titulo);
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
 }
 
-.about__paragraph{
-    text-align: justify;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: var(--color-titulo);
+.sobremi h2 {
+    font-size: 42px;
+    font-family: var(--nombre);
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
 }
 
-.about__firma{
-    width: 9rem;
-    
+.sobremi .contenido-seccion p span{
+    color: var(--color-elementos) ;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 26px;
+    font-family: var(--nombre);
+    margin-bottom: 25px;
+} 
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: var(--color-elementos);
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: var(--color-elementos);
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-box);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background: var(--color-elementos);
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color-lista);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--color-lista);
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+}
+.sobremi button a {
+    text-decoration: none;
+    color: var(--color-lista);
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-elementos);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
 }

@@ -1,289 +1,541 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/head.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/title.css">
-    <link rel="stylesheet" href="/css/sobreMi.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">;
+    <link rel="stylesheet" href="./css/head.css">;
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/sobreMi.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/curriculum.css">
+    <link rel="stylesheet" href="./css/portafolio.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title> Mi Portafolio</title>
 </head>
+
 <body>
     <!-- Sección del Menú  -->
-    <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <div></div>
-            <img src="assets\vector.png" class="menu__img">
-            <h3 class="menu__title">ERNESTOR MEJIAS MAIZ</h3>
+    <section class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ERNESTOR MEJIAS</a>
+            </div>
+            
+            <nav id="nav"> <!-- class="responsive" -->
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li class="finList"><a href="#contacto" onclick="selecionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">mejiasernestor@gmail.com</a></li>
-        </nav>
     </section>
 
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets/IMG_20211019_125249.jpg">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Ernestor Mejias y construyo paginas web</h2>
-                <h3 class="title__subsection">Soy ingeniero de Telecomunicaciones y  actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
-                </ul>
+    <!-- seccion del inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenido-img">
+                <img src="./assets/IMG_20211019_125249.jpg" alt="foto de perfil">
+            </div>
+            <h1>ERNESTOR MEJIAS</h1>
+            <h2>Ingeniero de Telecomunicaciones- Desarrollador Web</h2>
+            <div class="redes">
+                <a href="https://web.facebook.com/ernestor.mejias/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@crypzus90" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/ernestormejias/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/crypzus" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ernestor-mejias/?trk=public-profile-join-page" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </section>
-    
-    <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Proactivo y autodidacta de rápido aprendizaje, asimilación y adaptación a nuevas tecnologías. Cuento con alto desempeño y rendimiento para trabajar en equipo.</p> <br>
-    
-            <p class="about__paragraph"> Me gustan los desafíos y soy amantes de la tecnología, desde que por fin decidí sumergirme en este mundo de la programación, veo la cosas de una manera distinta, me gusta lo que he aprendido, y me motiva lo que me falta por aprender, nunca es tarde, cuando se quiere hacer algo, con esfuerzo, mucha diciplina y la ganas de superarse son las herramientas necesarias para lograr el objetivo, gracias al PROYECTO ORACLE ONE EN ALURA LATAM por mostrar el camino para iniciar esta bonita carrera de la programación.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets/firma.png" class="about__firma">
-        </div>
+
+    <!-- sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span> Hola soy Ernestor Mejias.</span> Proactivo y autodidacta de rápido aprendizaje, asimilación y
+                adaptación a nuevas tecnologías. Cuento con alto desempeño y rendimiento para trabajar en equipo! Me
+                gustan los desafíos y soy amante de la tecnología.</p>
+
+            <div class="fila">
+                <!-- datos perosnales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            18-07-1990
+                        </li>
+                        <li>
+                            <strong>Celular:</strong>
+                            +51926885522
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            mejiasernestor@gmail.com
+                        </li>
+                        <li>
+                            <strong>WebSite:</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Jiron Ayacucho 3816,Av. Perú, Lima, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>FREELANCE</span>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <span>TRADING</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-language"></i>
+                            <span>INGLES</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>REDES</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>COPUTACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car-side"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>DEVELOPER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="/assets/Currículum Vitae CV Ernestor mejias.pdf" download="CV Ernestor mejias.pdf">Descargar CV</a> <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+
     </section>
 
-    <!-- Sección de Skills -->
+    <!-- Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- skill tecnicos  -->
+                <div class="col">
+                    <h3>Técnical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git & GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
+                    <div class="skill">
+                        <span>NODE.JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- skill profesionales -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento crítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                        <li class="skills__name">PHP</li>
-                    </ul>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name"> Patinaje</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar bajo</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Oir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ver séries</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cocinar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tomar fotos</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-        <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profissional</h2>
-        <div class="experiencie__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\decod_print.png">
-            <div class="experience__info"
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- lado izquierdo -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
 
-        <div class="experiencie__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\forca_print.png">
-            <div class="experience__info"
-                <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                    <div class="item izq">
+                        <h4>Ingeneria de Telecomunicaciones</h4>
+                        <span class="casa">Universidad Nacional experimental de la Fuerza
+                            Armada (UNEFA)</span>
+                        <span class="fecha">2013 - 2017</span>
+                        <p>Formación académica universitaria donde se aprende conceptos de comunicaciones, redes y
+                            sistemas. Incluye señales, modulación, redes, arquitecturas, enrutamiento, tecnologías
+                            inalámbricas, sistemas de radio, telefonía, fibra óptica, amplificadores, filtros y
+                            comunicaciones digitales. También aborda seguridad, gestión de proyectos y estudios de
+                            transmisión de datos en telecomunicaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
-            </div>
-        </div>  
+                    <div class="item izq">
+                        <h4>Curso HTML & CSS</h4>
+                        <span class="casa">Oracle Next Education</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>El curso tuvo una duración de 36 horas durante las cuales se enseñó a crear una página
+                            web estática desde cero. Se abordaron la estructuración del contenido, el
+                            posicionamiento de elementos, la creación de listas, navegación, tablas y formularios.
+                            También se aprendió a implementar estilos y efectos personalizados con CSS, además de
+                            integrar JavaScript y CSS en HTML para agregar funcionalidad y mejorar la apariencia de
+                            la página</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
 
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\secretcode_print.png">
-            <div class="experience__info-container"
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                    <div class="item izq">
+                        <h4>Curso Git & GitHub</h4>
+                        <span class="casa">Oracle Next Education</span>
+                        <span class="fecha"> 2023</span>
+                        <p>Este curso tuvo un tiempo de duración de 8 horas donde te enseña control de versiones
+                            y colaboración en proyectos con Git y GitHub. Se aprende a realizar seguimiento de
+                            cambios, crear puntos de verificación y retroceder a versiones anteriores mediante
+                            ramificación. Git controla versiones localmente, mientras que GitHub almacena
+                            repositorios de forma remota para facilitar la colaboración, revisiones de código y
+                            gestión de problemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
-            </div>
-        </div>  
 
-        <div class="experience__box">
-            <img class="experience__img" src="assets\forca2_print.png">
-            <div class="experience__info-container"
-            <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                    <div class="item izq">
+                        <h4>Curso React Basico</h4>
+                        <span class="casa">Oracle Next Education</span>
+                        <span class="fecha">2023</span>
+                        <p>Este curso tubo un periodo de 50 horas donde aprendes a construir interfaces de
+                            usuarios interactivas y reactivas, una renderización mas eficiente usando un enfoque
+                            de virtual dom que permite utilizar las partes necesarias de la interfaz de usuario
+                            cuando los datos cambian mejorando así el rendimiento y la velocidad a través de
+                            aplicaciones en una sola página.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
+
+                    <div class="item izq">
+                        <h4> Curso JavaScript Basico</h4>
+                        <span class="casa">Open-Bootcamp</span>
+                        <span class="fecha">2023</span>
+                        <p> El curso tuvo una duración aproximada de 15 horas y enseñó los fundamentos básicos
+                            del lenguaje, incluyendo sintaxis, estructura de datos, programación orientada a
+                            objetos, listas, funciones y gestión de eventos. También se abordó el uso de
+                            librerías, APIs y herencia de clases. Los participantes adquirieron habilidades para
+                            trabajar y desarrollar aplicaciones efectivamente con el lenguaje.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- lado derecho -->
+                <div class="col derecho">
+                    <h3 class="exp-trabajo">Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Técnico de Planta Interna</h4>
+                        <span class="casa">Operación y Proyectos S.A.C</span>
+                        <span class="fecha">OCTUBRE 2022 - actualmente</span>
+                        <p>Supervisar el cumplimiento del programa de mantenimiento preventivo y correctivo en nodos de
+                            telecomunicaciones. Atender incidencias y fallas en redes, sistemas de Networking,
+                            televigilancia, suministro de energía y grupos electrógenos. Experiencia en equipos como
+                            OTDR y Power Meter. Trabajar con marcas reconocidas como Ciena, Alcatel, Cisco, Juniper y
+                            Huawei. Enfoque en mantener alta disponibilidad y rendimiento de los equipos, garantizando
+                            la integridad de la red y resolviendo problemas en nodos de telecomunicaciones.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico de Planta Interna</h4>
+                        <span class="casa">Roca Fuerte S.A.C</span>
+                        <span class="fecha">MARZO 2021 - SEPTIEMBRE 2022</span>
+                        <p>Responsable del mantenimiento preventivo y correctivo en centros beneficiarios, nodos de
+                            acceso y distribución. Atención de incidencias en equipos de energía, radioenlaces,
+                            Networking e infraestructura. Garantía del funcionamiento de equipos eléctricos y
+                            electrónicos en salas técnicas. Implementación de servicios de WIFI público en plazas y
+                            losas deportivas. Mantenimiento de grupos electrógenos, aires acondicionados y
+                            humidificadores.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico de Planta Interna</h4>
+                        <span class="casa">Satelital Telecomunicaciones S.A.C</span>
+                        <span class="fecha">DICIEMBRE 2020 - FEBRERO 2021</span>
+                        <p>Responsable del mantenimiento preventivo y correctivo en centros beneficiarios, nodos de
+                            acceso y distribución. Atención de incidencias en equipos de energía, radioenlaces,
+                            Networking e infraestructura. Garantía del funcionamiento de equipos eléctricos y
+                            electrónicos en salas técnicas. Implementación de servicios de WIFI público en plazas y
+                            losas deportivas. Mantenimiento de grupos electrógenos, aires acondicionados y
+                            humidificadores.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Técnico de Campo</h4>
+                        <span class="casa"> BMP Consulting S.A.C.</span>
+                        <span class="fecha"> JUNIO 2020 - NOVIEMBRE 2020</span>
+                        <p> REsponsable de la configuración de equipos Huawei como FIREWALL, UPS, SWITCH, ODU, IDU y AP.
+                            Generación de reportes fotográficos para documentar la instalación y configuración adecuada.
+                            Extracción de logs y displays para análisis y diagnósticos. Instalación y configuración de
+                            computadoras e impresoras. Pruebas de velocidad y ping para evaluar el rendimiento y
+                            conectividad de la red.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico de Operaciones</h4>
+                        <span class="casa">Teleservicios Comerciales Oliva E.I.R.L.</span>
+                        <span class="fecha">AGOSTO 2018 - MAYO 2020</span>
+                        <p>Responsable del monitoreo, testeo y evaluación de la conectividad y velocidad de red. Pruebas
+                            de navegación, filtro, ping, tracer, etc. Realización de pruebas en portales de anuncio y
+                            códigos Aptilo para el servicio de WIFI en el aeropuerto. Configuración y mantenimiento
+                            avanzado de equipos informáticos. Asesoramiento y atención al cliente profesional y amable
+                            en relación al servicio.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        </div>  
+        </div>
+        </div>
 
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
+    </section>
+
+    <!-- Portafolio -->
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./assets/img (1).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
                 </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
+                <div class="proyecto">
+                    <img src="./assets/img (2).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img (3).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img (4).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img (5).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img (6).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+</section>
 
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Fulana de Tal</p>
-                <p>2022</p>
+    <!-- Contacto -->
+
+    <section id="contacto" class="contacto">
+        <div class="contenedor-section">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Numero Telefono">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                </div>
+                <!-- MAPA -->
+                <div class="col" id="map">
+                    
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+<!-- footer  -->
+    
+<footer>
+    <a href="#inicio"  class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://web.facebook.com/ernestor.mejias/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@crypzus90" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/ernestormejias/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/crypzus" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ernestor-mejias/?trk=public-profile-join-page" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
- <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+</footer>
+
+
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyAFSBzDvxx_7vGp5SoCZDg8cxIOQ44Av7g", v: "beta"});</script>
 </body>
+<!-- Script del documento JavaScript -->
+
+<script src="./js/index.js"></script>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script src="./js/animacionSobreMi.js"></script>
+
 </html>
