@@ -61,6 +61,12 @@ footer .arriba:hover{
     footer{
         
         padding: 0px;
+
+        
+    }
+    footer .redes h2{
+        padding-top: 20px;
+        font-size: 24px;
         
     }
 }
