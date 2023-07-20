@@ -1,4 +1,4 @@
 
-new TypeIt(".about__me", {
-    strings: "Proactivo y autodidacta de rápido aprendizaje, asimilación y adaptación a nuevas tecnologías. Cuento con alto desempeño y rendimiento para trabajar en equipo!",
+new TypeIt("#animacion", {
+    strings: "<span class='material-symbols-outlined'>grade</span> With responsibility and creativity, we build a bright future. <span class='material-symbols-outlined'>grade</span>"
   }).go();
