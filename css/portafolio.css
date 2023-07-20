@@ -83,6 +83,7 @@
     .portafolio  .galeria{
         display: block;
         width: 100;
+        
     }
     .portafolio  .galeria .proyecto{
         max-width: 100%;
@@ -90,6 +91,8 @@
 
     .portafolio  .galeria .proyecto img{
         width: 100%;
+        padding-bottom:15px ;
+        border-radius: 15px;
     }
 
 

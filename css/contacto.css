@@ -77,8 +77,8 @@
 #map {
     border-radius: 10px ;
     margin: 10px;
-    height: 550px;
-    width: 900px;
+    height: 500px;
+    width: 450px;
     
    
    
@@ -87,7 +87,9 @@
 /* media qerry */
 @media screen and (max-width:980px){
     
-
+    .contacto .fila{
+        flex-direction: column;
+    }
     .contacto .fila  .col{
         width: 100%;
     }
@@ -106,12 +108,14 @@
         
     }
     
-}
-@media screen and (max-width:700px){
-    
-    .contacto .fila{
-        display: block;
+    .contacto .fila #map{
+        width:auto;
+        
     }
+}
+/* @media screen and (max-width:787px){
+    
+    
 
     .contacto .fila  .col{
         width: 100%;
@@ -130,5 +134,10 @@
         margin-right: 5px;
         
     }
-    
-}
+    .contacto .col #map{
+        width: 50px;
+
+       
+        
+    }
+} */
